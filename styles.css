@@ -1,0 +1,236 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .wrapper {
+            max-width: 100%;
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .date-bar {
+            font-size: 12px;
+            text-align: right;
+            color: #006600;
+            padding: 10px;
+        }
+
+        .welcome-box {
+            background-color: #dff0d8;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            overflow: auto;
+        }
+
+        .welcome-box h2 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .welcome-box p {
+            font-size: 0.95em;
+            color: #555;
+        }
+        .actions-container {
+         background-color: black;
+         padding: 10px;
+         text-align: center;
+        }
+
+        .actions-container a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+
+        /* Estilo para la caja de cambio de contraseña */
+        .password-container {
+            background-color: #fbe290;
+            text-align: center;
+            line-height: 40px;
+            margin: 15px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .password-container .TituloPag {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .password-form {
+            text-align: left;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            margin: 15px auto;
+        }
+
+        .password-form input {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 1px solid #2e2e2e;
+            width: max-content;
+            font-size: 1rem;
+        }
+
+        /* Para botones */
+        .password-form a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #006600;
+        }
+
+        .password-form a:hover {
+            color: #004d00;
+        }
+
+        /* Footer */
+        #footer {
+            font-size: 0.875rem;
+            color: #c9c9c9;
+            text-align: center;
+            padding: 10px;
+            background-color: #000000;
+        }
+
+        /* Menú desplegable */
+        .actions-container {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .actions-container a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 12px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .actions-container a:hover {
+            background-color: #000000;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Ocultar el menú por defecto */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            z-index: 10;
+            min-width: 150px;
+        }
+
+        /* Estilo para los enlaces del menú */
+        .dropdown-menu a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #444;
+        }
+
+        /* Mostrar menú al pasar el mouse */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Media Queries para pantallas pequeñas */
+        @media (max-width: 768px) {
+
+            /* Ajustes generales */
+            .actions-container {
+                text-align: left;
+                padding: 10px;
+            }
+
+            .actions-container a {
+                display: block;
+                padding: 15px;
+                font-size: 14px;
+            }
+
+            /* Menú desplegable para móviles */
+            .dropdown-menu {
+                position: static;
+                transform: none;
+                /* Quitamos transformación */
+                background-color: rgb(134, 134, 134);
+                width:100vw;
+                /* Ocupa todo el ancho */
+                text-align: left;
+                /* Enlaces alineados a la izquierda */
+            }
+
+            .dropdown-menu a {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+
+            /* Ajustamos el banner */
+            .banner-container img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .welcome-box {
+                margin: 10px;
+                font-size: 0.9em;
+            }
+
+            #footer {
+                font-size: 0.8rem;
+                padding: 10px;
+            }
+        }
+
+
+
+
