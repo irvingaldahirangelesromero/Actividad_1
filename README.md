@@ -1,4 +1,4 @@
-### Capturas de pantalla
+# Capturas de pantalla
 
 ## Escritorio
 <div style="display: flex; justify-content: space-around; margin-bottom: 20px; border: 1px solid #ccc; padding: 10px;">
